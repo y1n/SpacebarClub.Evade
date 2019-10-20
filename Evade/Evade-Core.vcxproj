@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{A2C0C344-1BAB-4D97-9BFF-48886E89125B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Evade</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)LIB\x86;$(LibraryPath)</LibraryPath>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <LinkStatus>true</LinkStatus>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <AdditionalOptions>/VERBOSE %(AdditionalOptions)</AdditionalOptions>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\SDK\clipper.hpp" />
+    <ClInclude Include="..\SDK\EventArgs.h" />
+    <ClInclude Include="..\SDK\EventHandler.h" />
+    <ClInclude Include="..\SDK\Geometry.h" />
+    <ClInclude Include="..\SDK\PluginSDK.h" />
+    <ClInclude Include="..\SDK\PluginSDK_Enums.h" />
+    <ClInclude Include="..\SDK\Vector.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="Evade.h" />
+    <ClInclude Include="EvadeConstants.h" />
+    <ClInclude Include="Evader.h" />
+    <ClInclude Include="EvadeSpells.h" />
+    <ClInclude Include="ISpecialSpell.h" />
+    <ClInclude Include="PathFinding.h" />
+    <ClInclude Include="SkillshotData.h" />
+    <ClInclude Include="SkillshotInstance.h" />
+    <ClInclude Include="SpecialSpells.h" />
+    <ClInclude Include="SpellBlocker.h" />
+    <ClInclude Include="SpellDb.h" />
+    <ClInclude Include="SpellDetector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\SDK\clipper.cpp" />
+    <ClCompile Include="..\SDK\PluginSDK.cpp" />
+    <ClCompile Include="..\SDK\Vector.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Evade.cpp" />
+    <ClCompile Include="Evader.cpp" />
+    <ClCompile Include="EvadeSpells.cpp" />
+    <ClCompile Include="PathFinding.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="SkillshotData.cpp" />
+    <ClCompile Include="SkillshotInstance.cpp" />
+    <ClCompile Include="SpecialSpells.cpp" />
+    <ClCompile Include="SpellBlocker.cpp" />
+    <ClCompile Include="SpellDb.cpp" />
+    <ClCompile Include="SpellDetector.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{480cac94-2b3d-4727-b487-5da6e53855f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{fa645a58-3edf-45c7-a8fd-f2248fdc89a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code">
+      <UniqueIdentifier>{37945e60-c1b8-460a-8767-dcf4a0f00d02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Evade.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellDetector.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFinding.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellDb.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SpellBlocker.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillshotInstance.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillshotData.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeSpells.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Evader.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="EvadeConstants.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ISpecialSpell.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialSpells.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\clipper.hpp">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\EventArgs.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\EventHandler.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\Geometry.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\PluginSDK.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\PluginSDK_Enums.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\SDK\Vector.h">
+      <Filter>SDK</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SpellDb.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialSpells.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellDetector.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Evade.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="SpellBlocker.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillshotInstance.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillshotData.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="EvadeSpells.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinding.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Evader.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\SDK\clipper.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\PluginSDK.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SDK\Vector.cpp">
+      <Filter>SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
