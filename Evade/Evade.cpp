@@ -884,10 +884,11 @@ namespace Evade
 	void OnIssueOrder(IGameObject* sender, OnIssueOrderEventArgs* args)
 	{
 		if (args->IssueOrderType == IssueOrderType::MoveTo || args->IssueOrderType == IssueOrderType::AttackTo)
-		{
-			EvadeToPoint.x = args->Position.x;
-			EvadeToPoint.y = args->Position.y;
-		}
+			if (is_evading)
+			{
+				EvadeToPoint.x = args->Position.x;
+				EvadeToPoint.y = args->Position.y;
+			}
 		else
 		{
 			EvadeToPoint.x = 0;
