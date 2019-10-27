@@ -660,6 +660,13 @@ namespace Evade
 
 	void OnUpdate()
 	{
+		if (g_LocalPlayer->IsCastingInterruptibleSpell() || g_LocalPlayer->IsRecalling())
+		{
+			SetEvading(false);
+			EvadeToPoint.x = 0;
+			EvadeToPoint.y = 0;
+		}
+
 		player_position = g_LocalPlayer->ServerPosition();
 		SpellDetector::OnTick();
 
@@ -837,6 +844,7 @@ namespace Evade
 					{
 						if (g_LocalPlayer->Distance(EvadeToPoint) > 75)
 						{
+
 							g_LocalPlayer->IssueOrder(IssueOrderType::MoveTo, EvadeToPoint, false);
 						}
 

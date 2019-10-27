@@ -668,10 +668,11 @@ namespace SpellDb
 			InitializeSpell("Maokai")->_spell_name("MaokaiQ")->_missile_names({ "MaokaiQMissile" })->_danger_level(kHigh)->_raw_range(650)->_delay(350)->_raw_radius(110)->_missile_speed(1600)->_is_fixed_range(TRUE)->_is_dangerous(TRUE)->_skillshot_type(kMissileLine)
 		);
 
-		spells.push_back
-		(
-			InitializeSpell("Morgana")->_spell_name("DarkBindingMissile")->_missile_names({ "DarkBindingMissile" })->_danger_level(kHigh)->_raw_range(1300)->_raw_radius(70)->_missile_speed(1200)->_collision_flags(kHeroes | kMinions | kYasuoWall)->_is_fixed_range(TRUE)->_is_dangerous(TRUE)->_skillshot_type(kMissileLine)
-		);
+		// outdated
+		//spells.push_back
+		//(
+		//	InitializeSpell("Morgana")->_spell_name("DarkBindingMissile")->_missile_names({ "DarkBindingMissile" })->_danger_level(kHigh)->_raw_range(1300)->_raw_radius(70)->_missile_speed(1200)->_collision_flags(kHeroes | kMinions | kYasuoWall)->_is_fixed_range(TRUE)->_is_dangerous(TRUE)->_skillshot_type(kMissileLine)
+		//);
 
 		spells.push_back
 		(
